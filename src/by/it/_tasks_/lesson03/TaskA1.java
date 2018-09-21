@@ -50,8 +50,8 @@ class TaskA1 {
         double dsum = a + b;
         double dsub = a - b;
         double dmul = a * b;
-        double ddiv = a / b;
+        double ddiv = a / (double)b;
         double dmod = a % b;
-        System.out.println(sum + " " + sub + " " + mul + " " + div + " " + mod);
+        System.out.println(dsum + " " + dsub + " " + dmul + " " + ddiv + " " + dmod);
     }
 }
