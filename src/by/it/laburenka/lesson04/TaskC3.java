@@ -27,7 +27,7 @@ public class TaskC3 {
     public static void main(String[] args) {
         for (int i = 2; i <=10 ; i++) {
             for (int j = 2; j <=10 ; j++) {
-                System.out.print(build(i)+" умножить на "+build(j)+" равно "+build(i:i*j));
+                System.out.print(build(i)+" умножить на "+build(j)+" равно "+build(i*j));
             }
         }
     }
@@ -58,7 +58,7 @@ public class TaskC3 {
 
      }
  }
- String end=(i % 10) > 0 ? " " + build(i % 10) : "");
+ String end=(i % 10) > 0 ? " " + build(i % 10) : "";
 switch (i/10) {
         case 2: return "двадцать"+end;
         case 3: return "тридцать"+end;
@@ -70,4 +70,6 @@ switch (i/10) {
         case 9: return "девяноста"+end;
         case 10: return "двадцать"+end;
     }
+    return "";
+}
 }
